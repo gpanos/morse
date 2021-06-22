@@ -15,4 +15,4 @@ $app = new Application('Morse', 1.0);
 
 $app->add(new MorseCommand);
 
-$app->run();
+$app->setDefaultCommand('morse')->run();
