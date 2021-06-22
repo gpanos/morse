@@ -1,0 +1,14 @@
+#!/usr/bin/env php 
+
+<?php
+
+use Morse\MorseCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__.'/vendor/autoload.php';
+
+$app = new Application('Morse', 1.0);
+
+$app->add(new MorseCommand);
+
+$app->run();
