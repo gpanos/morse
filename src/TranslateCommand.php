@@ -7,11 +7,11 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class MorseCommand extends Command
+class TranslateCommand extends Command
 {
     protected function configure()
     {
-        $this->setName('morse')
+        $this->setName('translate')
             ->setDescription('Translate text to morse code.')
             ->addArgument('message', InputArgument::REQUIRED, 'What message should I translate?');
     }

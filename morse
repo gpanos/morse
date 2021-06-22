@@ -2,7 +2,7 @@
 
 <?php
 
-use Morse\MorseCommand;
+use Morse\TranslateCommand;
 use Symfony\Component\Console\Application;
 
 if (file_exists(__DIR__.'/vendor/autoload.php')) {
@@ -13,6 +13,6 @@ if (file_exists(__DIR__.'/vendor/autoload.php')) {
 
 $app = new Application('Morse', 1.0);
 
-$app->add(new MorseCommand);
+$app->add(new TranslateCommand());
 
-$app->setDefaultCommand('morse')->run();
+$app->run();
