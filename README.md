@@ -1,4 +1,4 @@
-A command line tool to translate latin text to morse code ¯\_(ツ)_/¯
+A command line tool to translate latin text to morse code.
 
 ```
 # Install 
